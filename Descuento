@@ -1,0 +1,23 @@
+Proceso Monto
+	Definir Cantidad, Precio, Total Como Real;
+	
+	Escribir "Ingrese cantidad de poleras a comprar:";
+	Leer Cantidad;
+	Precio=50;
+	
+	Total= Cantidad*Precio;
+	
+	Si (Total<5000) Entonces
+		Escribir "Usted no tiene descuento:",Total;
+	Sino
+		Si (Total>=5000 y Total<=10000) Entonces
+			Escribir "Usted tiene un 15% de descuento";
+			Escribir "Total a pagar:",Total*0.85;
+		Sino
+			Escribir "Usted tiene un 20% de descuento";
+			Escribir "Total a pagar:",Total*0.8;
+		Fin Si
+	Fin Si
+	
+	
+FinProceso
