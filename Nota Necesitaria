@@ -1,0 +1,20 @@
+Proceso Notasnecesaria
+	Definir P1,p2,pp,ef Como Entero;
+	Definir NF Como Real;
+	
+	Escribir "Ingrese Nota Parcial 1:";
+	leer P1;
+	Escribir "Ingrese Nota Parcial 2:";
+	leer P2;
+	Escribir "Ingrese Nota Practica:";
+	leer PP;
+	
+	EF=(51-(P1*0.2)-(P2^.02)-(PP*0.2))/0.4;
+	
+	Si (EF>0) Entonces
+		Escribir "Usted necesita para aprobar una nota de:",EF;
+	Sino
+		Escribir "Usted ya aprobo la materia sin Examen Final:";
+	Fin Si
+	
+FinProceso
