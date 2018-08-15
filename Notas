@@ -1,0 +1,22 @@
+Proceso Notas
+	Definir P1,p2,pp,ef Como Entero;
+	Definir NF Como Real;
+	
+	Escribir "Ingrese Nota Parcial 1:";
+	leer P1;
+	Escribir "Ingrese Nota Parcial 2:";
+	leer P2;
+	Escribir "Ingrese Nota Practica:";
+	leer PP;
+	Escribir "Ingrese Nota Examen Final:";
+	Leer EF;
+	
+	NF=(P1*0.2)+(P2*0.2)+(PP*0.2)+(EF*0.4)
+	
+	Si (NF>=51) Entonces
+		Escribir "Usted ha aprobado con:",NF;
+	Sino
+		Escribir "Usted ha reprobado con:",NF;
+	Fin Si
+	
+FinProceso
