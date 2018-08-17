@@ -9,7 +9,7 @@ using namespace std;
 
 void main()
 {
-	cout<<"Hola Mundo";
+	cout<<"Hola Mundo"<<endl;
 	cout<<"Soy Rodrigo Saldaña";
 	getch();
 }
