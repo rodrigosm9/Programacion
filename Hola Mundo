@@ -1,4 +1,4 @@
-// holamundo.cpp : Defines the entry point for the console application.
+// HolaMundo2.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -7,9 +7,10 @@
 
 using namespace std;
 
-void main() 
+void main()
 {
-	cout << "Hola Mundo";
+	cout<<"Hola Mundo";
+	cout<<"Soy Rodrigo Saldaña";
 	getch();
 }
 
