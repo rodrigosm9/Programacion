@@ -12,3 +12,10 @@ void main()
 	cout << "Hola Mundo";
 	getch();
 }
+
+=============================================
+Pseint
+Proceso HolaMundo
+	Escribir "HolaMundo";
+FinProceso
+
