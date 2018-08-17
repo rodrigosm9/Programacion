@@ -8,3 +8,24 @@ Proceso Areatriangulo
 	
 FinProceso
 ==================================
+// Areatriangulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float b, h, Area;
+	cout<<"Ingrese la base: "<<endl;
+	cin>> b;
+	cout<<"Ingrese la altura: "<<endl;
+	cin>>h;
+	Area=(b*h)/2;
+	cout<<"El area del triangulo es: "<<endl;
+	cout<<Area;
+	getch ();
+}
