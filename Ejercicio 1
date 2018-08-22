@@ -1,0 +1,31 @@
+// Ejercicio1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main (){
+int opcion;
+cout << "Bienvenidos a la ayudantia de SI120" <<endl;
+cout <<"Elegir un Aula" <<endl;
+cout <<"1. Aula A212" <<endl;
+cout <<"2. Aula E112" <<endl;
+cout <<"3. Aula A110" <<endl;
+cin >>opcion;
+
+if(opcion==1){
+	cout << "El aula se encuentra ennel 2do Piso";
+}else{
+	if(opcion==2){
+		cout <<"El aula se encuentra en los laboratorios de atras";
+	}else{
+		if(opcion==3){
+			cout <<"El aula se encuentra a lado del cajero";
+		}else{
+			cout <<"Opcion Incorrecta";
+		}
+	}
+}
+getch();
+}
