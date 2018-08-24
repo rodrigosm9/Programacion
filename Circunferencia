@@ -19,3 +19,16 @@ cout <<"El perimetro es: "<<Perimetro<<endl;
 getch();
 } 
 ===================================================
+Proceso Circunferencia
+	Escribir "El radio: ";
+	leer r;
+	p<-3.141592;
+	area<- p*r*r;
+	perimetro<- 2*p*r;
+	Escribir "El area es: ";
+	Escribir area;
+	Escribir "El perimetro es: ";
+	Escribir perimetro;
+	
+	
+FinProceso
