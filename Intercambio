@@ -14,3 +14,26 @@ Proceso Intercambio
 	
 FinProceso
 ==========================================
+// Intercambiar dos variables.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+{ float a,b,c;
+cout<< "Ingrese a: "<<endl;
+cin>> a;
+cout<< "Ingrese b: "<<endl;
+cin>> b;
+c=a;
+a=b;
+b=c;
+cout<< "Nuevo a: "<<a<<endl;
+cout<< "Nuevo b: "<<b<<endl;
+getch ();
+}
