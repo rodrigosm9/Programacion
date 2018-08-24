@@ -1,0 +1,21 @@
+// Perimetro.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+{ float Area, Perimetro, pi=3.141592, r;
+cout <<"Ingrese el radio: "<<endl;
+cin >> r;
+Area= pi*r*r;
+Perimetro= 2*pi*r;
+cout <<"El Area es: "<<Area<<endl;
+cout <<"El perimetro es: "<<Perimetro<<endl;
+getch();
+} 
+===================================================
