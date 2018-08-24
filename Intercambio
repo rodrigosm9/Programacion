@@ -1,0 +1,16 @@
+Proceso Intercambio
+	Escribir "Ingrese a:";
+	leer a;
+	Escribir "Ingrese b:";
+	Leer b;
+	c<-a;
+	a<-b;
+	b<-c;
+	Escribir "Nuevo a:";
+	Escribir a;
+	Escribir "Nuevo b:";
+	Escribir b;
+
+	
+FinProceso
+==========================================
