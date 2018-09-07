@@ -1,0 +1,40 @@
+// Bolitas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main (){
+	int numbolita;
+	float preciototal;
+	//Validar la entrada
+	do {
+		cout<< "Ingresar numero de bolita: ";
+		cin>> numbolita;
+	} while (numbolita<0);
+	do {
+		cout<< "Ingresar el precio: ";
+		cin>> preciototal;
+	} while (preciototal<=0);
+	//Determinar el descuento
+	if (numbolita==2)
+		cout<< "El precio total es: "<<preciototal;
+	else 
+		if (numbolita==4)
+			cout<< "El precio total es: "<<preciototal*0.95;
+		else 
+			if (numbolita==6)
+				cout<< "El precio total es: "<<preciototal*0.8;
+			else
+				if (numbolita==8)
+					cout<< "El precio total es: "<<preciototal*0.5;
+				else
+					cout<< "Error numero de bolita no considerado "<<endl;
+	getch ();
+}
+===========================================================================
+
