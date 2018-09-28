@@ -1,0 +1,56 @@
+// Cuadraticareferencia.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+float discriminante(float a1, float b1, float c1);
+void reales (float a, float b, float c, float &x1, float &x2);
+void imaginario (float a, float b, float c, float &x1, float &x2)
+void main ()
+{
+	float a, b, c, valor1, valor2, d;
+	cout<< "Ingrese los valores de a, b, y c: " <<endl;
+	cin>> a>>b>>c;
+	d=discriminante(a,b,c);
+	if (d>0)
+	{
+		reales(a,b,c,valor1,valor2);
+		cout<<"Raiz 1: "<<valor1<<endl;
+		cout<<"Raiz 2: "<<valor2<<endl;
+	} else {
+		if (d<0)
+		{
+			imaginario(a,b,c,valor1,valor2);
+			cout<<"Raiz 1: "<<valor1<<endl;
+			cout<<"Raiz 2: "<<valor2<<endl;
+
+		} else {
+			reales(a,b,c,valor1,valor2);
+			cout<< "Solucion"<<valor1;
+		}
+	}
+
+	getch ();
+}
+
+float discriminante(float a1, float b1, float c1)
+{
+	float d;
+	d=pow(b1,2)-4*a1*c1;
+	return d;
+}
+void reales (float a, float b, float c, float &x1, float &x2)
+{
+	x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+	x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+}
+void imaginario (float a, float b, float c, float &x1, float &x2)
+
+	x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+	x1=(-b-sqrt(-pow(b,2)-4*a*c))/(2*a);
+}
+ojo
