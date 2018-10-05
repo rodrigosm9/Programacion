@@ -1,0 +1,26 @@
+// Practico3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int serie(int n);
+
+void main()
+{
+	int n, sum;
+	cout<<"Introducir la cantidad de numeros a sumar: ";
+	cin>>n;
+	sum=serie(n);
+	cout<<"El valor de la suma es: "<<sum<<endl;
+	getch();
+}
+int serie(int n)
+{	int s=0,x=1;
+	while (x<=n){
+		s=s+x;
+		x=x+2;}
+	return s;
+}
