@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+float distancia (float x1, float y1, float x2, float y2);
+void main(){
+	float x1,y1,x2,y2,x3,y3,dis1,dis2,dis3,hipo;
+	cout<<"Ingrese primer punto P1";
+	cin>>x1>>y1;
+	cout<<"Ingrese segundo punto P2";
+	cin>>x2>>y2;
+	cout<<"Ingrese tercer punto P3";
+	cin>>x3>>y3;
+	dis1=distancia(x1,y1,x2,y2);
+	dis2=distancia(x2,y2,x3,y3);
+	dis3=distancia(x1,y1,x3,y3);
+	if(dis1>dis2)
+		if(dis1>dis3)
+			hipo=dis1;
+		else
+			hipo=dis3;
+	else
+		if (dis2>dis3)
+			hipo=dis2;
+		else
+			hipo=dis3;
